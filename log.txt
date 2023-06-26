@@ -1,0 +1,2 @@
+2023-06-26 16:03:37 - Log file cleared.
+2023-06-26 16:03:37 - Executing test case: Manage absence of correspondent

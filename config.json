@@ -1,0 +1,106 @@
+{
+	"host": "127.0.0.1",
+	"port": 12345,
+	"testCases": [{
+			"name": "Manage absence of correspondent",
+			"waitTime": 0,
+			"connectionTimeout": 30,
+			"clients": [{
+				"clientName": "clientA",
+				"connectTime": 2,
+				"disconnectTime": 30,
+				"writeTime": 0,
+				"message": "",
+				"password": "password123"
+			}]
+		},
+		{
+			"name": "Manage basic communication",
+			"waitTime": 1,
+			"connectionTimeout": 30,
+			"clients": [{
+					"clientName": "clientA",
+					"connectTime": 2,
+					"disconnectTime": 30,
+					"writeTime": 5,
+					"message": "Hello from clientA",
+					"password": "password123"
+				},
+				{
+					"clientName": "clientB",
+					"connectTime": 5,
+					"disconnectTime": 30,
+					"writeTime": 0,
+					"message": "",
+					"password": "password456"
+				}
+			]
+		},
+		{
+			"name": "Manage bidirectional communication",
+			"waitTime": 0,
+			"connectionTimeout": 30,
+			"clients": [{
+					"clientName": "clientA",
+					"connectTime": 2,
+					"disconnectTime": 30,
+					"writeTime": 5,
+					"message": "[CMD]ECHOREPLY snowpack",
+					"password": "password123"
+				},
+				{
+					"clientName": "clientB",
+					"connectTime": 5,
+					"disconnectTime": 30,
+					"writeTime": 0,
+					"message": "",
+					"password": "password456"
+				}
+			]
+		},
+		{
+			"name": "Manage bidirectional communication but connect to correspondent based on dedicated secret – Same secrets",
+			"waitTime": 0,
+			"connectionTimeout": 30,
+			"clients": [{
+					"clientName": "clientA",
+					"connectTime": 2,
+					"disconnectTime": 30,
+					"writeTime": 5,
+					"message": "[CMD]ECHOREPLY snowpack",
+					"password": "password123"
+				},
+				{
+					"clientName": "clientB",
+					"connectTime": 5,
+					"disconnectTime": 30,
+					"writeTime": 0,
+					"message": "",
+					"password": "password123"
+				}
+			]
+		},
+		{
+			"name": "Manage bidirectional communication but connect to correspondent based on dedicated secret – Different secrets",
+			"waitTime": 0,
+			"connectionTimeout": 30,
+			"clients": [{
+					"clientName": "clientA",
+					"connectTime": 2,
+					"disconnectTime": 30,
+					"writeTime": 5,
+					"message": "[CMD]ECHOREPLY snowpack",
+					"password": "password123"
+				},
+				{
+					"clientName": "clientB",
+					"connectTime": 5,
+					"disconnectTime": 30,
+					"writeTime": 0,
+					"message": "Hi I have a different pass",
+					"password": "password456"
+				}
+			]
+		}
+	]
+}
