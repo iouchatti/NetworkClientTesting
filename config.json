@@ -45,7 +45,7 @@
 					"connectTime": 2,
 					"disconnectTime": 30,
 					"writeTime": 5,
-					"message": "[CMD]ECHOREPLY snowpack",
+					"message": "[CMD]ECHOREPLY ack",
 					"password": "password123"
 				},
 				{
@@ -67,7 +67,7 @@
 					"connectTime": 2,
 					"disconnectTime": 30,
 					"writeTime": 5,
-					"message": "[CMD]ECHOREPLY snowpack",
+					"message": "[CMD]ECHOREPLY ack",
 					"password": "password123"
 				},
 				{
@@ -89,7 +89,7 @@
 					"connectTime": 2,
 					"disconnectTime": 30,
 					"writeTime": 5,
-					"message": "[CMD]ECHOREPLY snowpack",
+					"message": "[CMD]ECHOREPLY ack",
 					"password": "password123"
 				},
 				{
